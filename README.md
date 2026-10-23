@@ -1,7 +1,6 @@
 # Cat Sanctuary
 
-Cat Sanctuary is a cat personality quiz made with HTML, CSS, and JavaScript. The idea is to answer a few questions and find out which cat matches your personality.
-
+Cat Sanctuary is a cute little pixel art game where you pick a cat and get a surprise
 ## Built With
 
 - HTML
