@@ -14,4 +14,4 @@ I practiced using JavaScript to make the page interactive and CSS to build the d
 ## Challenges
 The challenge I faced was that I had forgotten a lot of code, since I hadn’t done any programming for a while; but ,I’ve managed to recall most of it. and making the page look the way I wanted.
 
-Made by Nouran Ehab.
+## Made by Nouran Ehab.
