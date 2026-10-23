@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -140,10 +140,81 @@
           <div class="result-cat" id="resultCat"></div>
           <p class="result-word" id="resultWord">BOO!</p>
           <p class="result-caption" id="resultCaption">you have been chosen.</p>
+          <div class="result-traits" id="resultTraits" aria-label="Cat traits"></div>
+          <p class="result-quote" id="resultQuote"></p>
+          <div class="result-extra-actions"><button class="result-small-button" id="petCat" type="button">♡ GIVE A HEADPAT <span id="petCount">0</span></button><button class="result-small-button" id="shareCat" type="button">↗ SHARE THIS CAT</button></div>
           <button class="again" id="again" type="button"><span aria-hidden="true">↶</span> PICK ANOTHER CAT</button>
           <p class="result-footer">please do not question the cat.</p>
         </section>
       </div>
+    </section>
+
+    <section class="club-tools" aria-label="Cat club tools">
+      <div class="tool-copy">
+        <span class="tool-eyebrow">YOUR LITTLE CORNER</span>
+        <p><strong id="visitCount">0</strong> cats met <span aria-hidden="true">·</span> <strong id="collectionCount">0/4</strong> in your collection</p>
+      </div>
+      <div class="tool-actions">
+        <button class="pixel-button" id="shuffleCat" type="button">↻ SURPRISE ME</button>
+        <button class="pixel-button soft-button" id="favoriteCat" type="button" aria-pressed="false">♡ SAVE FAVOURITE</button>
+        <button class="pixel-button sound-button" id="soundToggle" type="button" aria-pressed="false">♪ SOUND OFF</button>
+      </div>
+      <p class="tool-message" id="toolMessage" role="status" aria-live="polite">Pick a cat to start your tiny collection.</p>
+    </section>
+
+    <section class="cat-log" aria-labelledby="log-title">
+      <div class="log-heading">
+        <div><span class="tool-eyebrow">THE CLUB NOTEBOOK</span><h2 id="log-title">Cats you've met</h2></div>
+        <span class="log-counter" id="logCounter">0 / 4</span>
+      </div>
+      <div class="log-grid" id="catLog">
+        <p class="log-empty" id="logEmpty">Your notebook is empty. Meet a cat and its little portrait will show up here.</p>
+      </div>
+    </section>
+
+
+    <section class="mood-station" aria-labelledby="mood-title" id="moodStation">
+      <div class="station-heading">
+        <div><span class="tool-eyebrow">A VERY UNOFFICIAL QUIZ</span><h2 id="mood-title">Find your cat mood</h2><p>Three tiny questions. Absolutely no scientific value.</p></div>
+        <span class="pixel-stamp" aria-hidden="true">MEOW!</span>
+      </div>
+      <div class="mood-progress" aria-label="Quiz progress"><span id="moodProgress"></span></div>
+      <div class="mood-question" id="moodQuestion" aria-live="polite">
+        <p class="question-count" id="questionCount">QUESTION 1 / 3</p>
+        <h3 id="questionText">Your ideal day is...</h3>
+        <div class="answer-grid" id="answerGrid">
+          <button class="answer-option" type="button" data-answer="purple">A blanket, a snack, and no plans.</button>
+          <button class="answer-option" type="button" data-answer="white">Quiet time to observe everything.</button>
+          <button class="answer-option" type="button" data-answer="orange">A spontaneous little adventure.</button>
+          <button class="answer-option" type="button" data-answer="blue">Exploring somewhere I should not be.</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="quizResult" hidden>
+        <span class="quiz-result-label">YOUR MOOD MATCH</span><strong id="quizCatName">MISO</strong><p id="quizCatText"></p>
+        <div class="quiz-actions"><button class="pixel-button" id="meetMoodCat" type="button">MEET THIS CAT ↗</button><button class="text-button" id="redoQuiz" type="button">try again</button></div>
+      </div>
+    </section>
+
+    <section class="daily-card" aria-labelledby="daily-title">
+      <div class="daily-art" aria-hidden="true"><span>✦</span><span>�</span><span>✦</span></div>
+      <div class="daily-copy"><span class="tool-eyebrow">A SMALL DAILY TRADITION</span><h2 id="daily-title">Todays tiny cat</h2><p id="dailyDescription">A new cat is waiting for you.</p></div>
+      <button class="pixel-button" id="dailyCatButton" type="button">REVEAL TODAY'S CAT</button>
+    </section>
+
+    <section class="club-progress" aria-labelledby="progress-title">
+      <div class="log-heading"><div><span class="tool-eyebrow">LITTLE MILESTONES</span><h2 id="progress-title">Club achievements</h2></div><span class="log-counter" id="achievementCounter">0 / 5</span></div>
+      <div class="achievement-grid" id="achievementGrid"></div>
+    </section>
+
+    <section class="notebook-controls" aria-label="Notebook controls">
+      <label class="notebook-search" for="catSearch"><span aria-hidden="true">⌕</span><input id="catSearch" type="search" placeholder="Find a cat in your notebook..." autocomplete="off"></label>
+      <div class="notebook-filters" role="group" aria-label="Filter notebook"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">ALL CATS</button><button class="filter-button" type="button" data-filter="favorite" aria-pressed="false">♥ FAVOURITE</button><button class="filter-button" type="button" data-filter="new" aria-pressed="false">NEW FRIENDS</button></div>
+      <button class="text-button reset-button" id="resetProgress" type="button">reset local progress</button>
+    </section>
+
+    <section class="pixel-settings" aria-label="Game settings">
+      <div><span class="tool-eyebrow">MAKE YOUR CORNER COMFY</span><p>Small settings, same tiny cats.</p></div>
+      <div class="settings-actions"><button class="pixel-button" id="themeToggle" type="button" aria-pressed="false">☾ NIGHT GARDEN</button><button class="pixel-button" id="motionToggle" type="button" aria-pressed="false">✦ MOTION ON</button></div>
     </section>
 
     <footer class="page-footer">
@@ -155,3 +226,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+'�'
